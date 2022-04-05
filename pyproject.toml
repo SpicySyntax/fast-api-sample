@@ -1,0 +1,14 @@
+[tool.autohooks]
+mode = "pipenv"
+pre-commit = ["autohooks.plugins.black","autohooks.plugins.isort", "autohooks.plugins.pylint", "autohooks.plugins.pytest_hook"]
+
+[tool.autohooks.plugins.pylint]
+include = ['app/*.py']
+arguments = ["--rcfile=pylintrc", "-s", "n"]
+
+[tool.autohooks.plugins.black]
+include = ['app/*.py']
+
+[tool.isort]
+profile = "black" 
+multi_line_output = 3

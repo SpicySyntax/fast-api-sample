@@ -1,0 +1,44 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+botocore = "*"
+certifi = "*"
+click = "*"
+fastapi = "*"
+h11 = "*"
+httpcore = "*"
+httpx = "*"
+idna = "*"
+jmespath = "*"
+pydantic = "*"
+python-dateutil = "*"
+rfc3986 = "*"
+s3transfer = "*"
+six = "*"
+sniffio = "*"
+starlette = "*"
+typing-extensions = "*"
+urllib3 = "*"
+uvicorn = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+black = "==21.5b2"
+pylint = "*"
+isort = "*"
+autohooks = "*"
+autohooks-plugin-pylint = "*"
+autohooks-plugin-black = "*"
+autohooks-plugin-isort = "*"
+localstack-client = "*"
+testcontainers = "*"
+
+
+[requires]
+python_version = "3.8"
